@@ -1,0 +1,2 @@
+datetime_utc,source,observer,location,channel,ra_deg,dec_deg,mag_or_flux,velocity_info,cascade_level,notes
+2025-11-20T18:45:00Z,NASA_live,"Svetlana Romanova","Earth, online stream","optical",,,,"",19,"First public briefing; focus on coma structure, possible perturbations."
