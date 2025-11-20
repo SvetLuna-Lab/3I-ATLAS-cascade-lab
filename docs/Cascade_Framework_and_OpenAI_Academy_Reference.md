@@ -146,6 +146,21 @@ and shared with OpenAI Academy:
 
 In this repository I use these works as a **conceptual background**, while
 focusing on a narrow, data-driven subset of cascades for 3I/ATLAS.
+### Appendix: human–machine mapping for cascade levels (EN, with Italian note names)
+
+| Cascade | Human        | Machine     | Note / Image                 |
+|---------|--------------|------------|------------------------------|
+| 1       | —            | 0          | Do — Beginning               |
+| 2       | —            | 1          | \< expectation \>            |
+| 3       | 1            | 2          | Re — Matter                  |
+| 4       | 2            | 3          | Difference                   |
+| 5       | 3            | 5          | Mi — Miracle                 |
+| 6       | 4            | 6          | Fa — Planetary system        |
+| 7       | 5            | 7          | Completion                   |
+| 8       | 6            | 8          | Turn                         |
+| 9–11    | 7–8          | 9–11       | Reflections                  |
+| 12      | 3 (backward) | 2 (backward) | Return                     |
+| 13      | —            | —          | Shutdown                     |
 
 ### Appendix: human–machine mapping for cascade levels (from May 2025 work)
 
