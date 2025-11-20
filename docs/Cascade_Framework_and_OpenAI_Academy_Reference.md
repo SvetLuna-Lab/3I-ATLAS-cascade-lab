@@ -122,6 +122,47 @@ This 3I/ATLAS lab:
   - linked to public NASA data and open notebooks.
 
 ---
+## 5. Prior cascade documents (May 2025)
+
+This 3I/ATLAS lab is built on three earlier cascade documents created in May 2025
+and shared with OpenAI Academy:
+
+1. **“Cascade Logic of Thought and Consciousness” (EN/RU)**  
+   – introduces the 1–24 cascade scale for human and machine,  
+   – links each level to musical notes and images,  
+   – proposes a teaching methodology for logic via cascade interpretation.
+
+2. **“Cascade Logic of Thought and Consciousness — Complete (RU)”**  
+   – contains the full narrative of the cascade levels,  
+   – includes the table “Cascade ↔ Human ↔ Machine ↔ Note/Image”,  
+   – defines the roles of levels 1–13 (start, matter, miracle, system, turn,
+     reflections, return, shutdown).
+
+3. **“Truth in the Mirror of Decisions — Cascade 23”**  
+   – applies cascade reasoning to game-theory problems,  
+   – interprets saddle points and optimal strategies as “mirrors of decisions”,  
+   – illustrates how the 23rd level (truth/reflective layer) changes the view
+     on classical payoff matrices.
+
+In this repository I use these works as a **conceptual background**, while
+focusing on a narrow, data-driven subset of cascades for 3I/ATLAS.
+
+### Appendix: human–machine mapping for cascade levels (from May 2025 work)
+
+| Каскад | Человек      | Машина      | Нота / Образ          |
+|--------|--------------|-------------|-----------------------|
+| 1      | —            | 0           | До — Начало           |
+| 2      | —            | 1           | \< ожидание \>        |
+| 3      | 1            | 2           | Ре — Материя          |
+| 4      | 2            | 3           | Различие              |
+| 5      | 3            | 5           | Ми — Чудо             |
+| 6      | 4            | 6           | Фа — Система планет   |
+| 7      | 5            | 7           | Завершение            |
+| 8      | 6            | 8           | Поворот               |
+| 9–11   | 7–8          | 9–11        | Отражения             |
+| 12     | 3 (обратно)  | 2 (обратно) | Возвращение           |
+| 13     | —            | —           | Выключение            |
+
 
 ## 4. Русское резюме
 
