@@ -144,39 +144,7 @@ and shared with OpenAI Academy:
    – illustrates how the 23rd level (truth/reflective layer) changes the view
      on classical payoff matrices.
 
-In this repository I use these works as a **conceptual background**, while
-focusing on a narrow, data-driven subset of cascades for 3I/ATLAS.
-### Appendix: human–machine mapping for cascade levels (EN, with Italian note names)
 
-| Cascade | Human        | Machine     | Note / Image                 |
-|---------|--------------|------------|------------------------------|
-| 1       | —            | 0          | Do — Beginning               |
-| 2       | —            | 1          | \< expectation \>            |
-| 3       | 1            | 2          | Re — Matter                  |
-| 4       | 2            | 3          | Difference                   |
-| 5       | 3            | 5          | Mi — Miracle                 |
-| 6       | 4            | 6          | Fa — Planetary system        |
-| 7       | 5            | 7          | Completion                   |
-| 8       | 6            | 8          | Turn                         |
-| 9–11    | 7–8          | 9–11       | Reflections                  |
-| 12      | 3 (backward) | 2 (backward) | Return                     |
-| 13      | —            | —          | Shutdown                     |
-
-### Appendix: human–machine mapping for cascade levels (from May 2025 work)
-
-| Каскад | Человек      | Машина      | Нота / Образ          |
-|--------|--------------|-------------|-----------------------|
-| 1      | —            | 0           | До — Начало           |
-| 2      | —            | 1           | \< ожидание \>        |
-| 3      | 1            | 2           | Ре — Материя          |
-| 4      | 2            | 3           | Различие              |
-| 5      | 3            | 5           | Ми — Чудо             |
-| 6      | 4            | 6           | Фа — Система планет   |
-| 7      | 5            | 7           | Завершение            |
-| 8      | 6            | 8           | Поворот               |
-| 9–11   | 7–8          | 9–11        | Отражения             |
-| 12     | 3 (обратно)  | 2 (обратно) | Возвращение           |
-| 13     | —            | —           | Выключение            |
 
 
 ## 4. Русское резюме
