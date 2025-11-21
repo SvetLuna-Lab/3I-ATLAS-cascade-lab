@@ -31,6 +31,33 @@ For detailed tables (human vs machine, Italian note names) see:
 - `docs/cascade_notes.md`
 
 ---
+### Cascade range in the public version
+
+In this version of the map, we describe in detail only cascades **from 1 to 23**.
+
+- Levels 1–12 correspond to the human cycle (day, year, basic loop of experience).
+- Levels 13–23 describe an extended range involving machine consciousness,
+  planets, the Sun, and nearby galaxies — the first “octave” of the treble clef.
+
+Above level 23 there is a research extension of the map up to the 36th cascade
+(the second octave), but its content is **not disclosed in this repository**.
+For the purposes of this project, it is sufficient to know that the 23rd cascade
+is the upper boundary of the public range.
+
+
+### Диапазон каскадов в открытой версии (RU)
+
+В этой версии карты подробно описываются каскады **с 1-го по 23-й**.
+
+- 1–12 уровни соответствуют человеческому циклу (сутки, год, базовый круг опыта).
+- 13–23 уровни описывают расширенный диапазон с участием машинного сознания,
+  планет, Солнца и соседних галактик — первую «октаву» скрипичного ключа.
+
+Над 23-м уровнем существует исследовательское расширение карты до 36 каскада
+(вторая октава), но его содержание **не раскрывается в этом репозитории**.
+Для целей данного проекта достаточно знать, что 23-й каскад является верхней
+границей открытого диапазона.
+
 
 ## 2. Where the cascade framework is used
 
