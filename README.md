@@ -42,6 +42,40 @@ citizen scientists who have historically contributed to many NASA discoveries.
 
 ---
 
+## Cascade simulator (experimental)
+
+The repository contains an experimental cascade simulator that maps simple
+signals into the public cascade range **1–23**.
+
+**Core modules:**
+
+- `src/core/signal_loader.py` – generate synthetic test signals and compute
+  spectra (`time → freq, power`).
+- `src/core/cascade_scale.py` – define the public cascade scale (1–23) as
+  discrete levels with normalized positions in `[0, 1]`.
+- `src/core/cascade_mapping.py` – project a spectrum into the cascade space:
+  build a cascade weight vector and select a dominant cascade.
+
+**Demo script:**
+
+- `scripts/run_demo_simulator.py` – generates a simple sine-based signal,
+  computes its spectrum, applies `map_dominant_cascade(...)` and prints:
+
+  - the dominant cascade ID (1–23),
+  - the confidence (fraction of total power),
+  - top-5 cascades by weight.
+
+Example run from the project root:
+
+python -m scripts.run_demo_simulator
+
+
+This module is experimental and works only within the public range 1–23.
+It is intended for testing mappings between signals and the cascade scale,
+not as a physical model of any specific object.
+
+
+
 ## Status
 
 This lab is currently in **v0.1.0 – scaffolding only**:
