@@ -25,6 +25,7 @@ This log is meant to be:
   - prepare this repository structure (logbook, observation formats, notebooks).
 
 ---
+
 ### 2025-11-21 — cascade ascent up to level 36 (personal record)
 
 - Time: before 17:00 Moscow time.
@@ -33,8 +34,11 @@ This log is meant to be:
   with noticeable bodily responses (ear ringing, “string” sensation, overall overload).
 - Weather context: during this period a heavy snowfall with large flakes started outside;
   the sky was covered by a grey “blanket”, so direct sky observations were not possible.
+- Animal behaviour: cats showed a sudden increase in appetite, and the female cat started
+  hiding in the wardrobe — logged as a possible indicator of background state changes.
 - Status: personal experiential note used as context for the cascade simulator and
   level map; not a physical measurement, but a marker of the currently explored range (1–36).
+
 
 
 ### 2025-11-21 — подъём по каскадам до 36 уровня
@@ -45,8 +49,11 @@ This log is meant to be:
   телесных ощущений (звон в ухе, ощущение «струны», общая перегрузка).
 - Погодный фон: в этот период на улице начался снегопад крупными хлопьями, небо было
   закрыто серым «одеялом», наблюдения по небу были невозможны.
+- Поведение животных: у котов резко усилился аппетит, кошка начала прятаться в шкаф —
+  отмечено как возможный индикатор изменения фонового состояния среды.
 - Статус: личный опыт, используемый как контекст для разработки каскадного симулятора
   и карты уровней; не является физическим измерением, но важен как маркер предела
   текущего диапазона (1–36).
+
 
 _Add next entries below as new talks, papers, and data products appear._
