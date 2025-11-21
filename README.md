@@ -74,6 +74,38 @@ This module is experimental and works only within the public range 1–23.
 It is intended for testing mappings between signals and the cascade scale,
 not as a physical model of any specific object.
 
+### Observation logs and simulated cascade annotation
+
+For external events (e.g. 3I/ATLAS briefings) the project uses CSV logs
+under `data/observations/`:
+
+- `data/observations/3I_ATLAS_observations_template.csv` – example log
+  with columns like `datetime_utc`, `source`, `channel`, `cascade_level`, `notes`.
+
+These logs can be enriched with simulated cascade information (range 1–23)
+using:
+
+python -m scripts.annotate_observations_with_cascade
+
+
+This script:
+
+reads the input CSV,
+
+generates a simple synthetic signal per row (based on the channel field),
+
+runs the cascade simulator,
+
+writes an output CSV with two extra columns:
+
+sim_main_cascade – dominant cascade level (1–23),
+
+sim_confidence – fraction of total spectral power assigned to this level.
+
+This is an experimental tool for linking observation timelines to the
+public cascade scale, not a physical model of any specific object.
+
+
 
 ## Jupyter notebook demo
 
