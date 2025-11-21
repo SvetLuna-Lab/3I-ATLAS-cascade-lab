@@ -2,4 +2,4 @@ datetime_utc,source,observer,location,channel,ra_deg,dec_deg,mag_or_flux,velocit
 
 
 2025-11-19T20:41:00Z,NASA_live,Svetlana Romanova,"online stream",optical,,,,"Q&A about data access",19,"NASA answered about 3I/ATLAS campaign and mentioned citizen scientists."
-notebooks: add 02_observation_cascade_annotation with timeline and histogram views
+
