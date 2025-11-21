@@ -75,6 +75,31 @@ It is intended for testing mappings between signals and the cascade scale,
 not as a physical model of any specific object.
 
 
+## Jupyter notebook demo
+
+For interactive exploration there is a notebook:
+
+- `notebooks/01_cascade_simulator_demo.ipynb`
+
+The notebook walks through the same pipeline as the demo script, but with plots:
+
+1. Generate a synthetic signal (sum of a few sines with noise).
+2. Compute its spectrum (`freq`, `power`).
+3. Load the public cascade scale 1–23 (`get_public_scale()`).
+4. Apply `map_dominant_cascade(...)` to obtain:
+   - the dominant cascade ID,
+   - the confidence (fraction of total power),
+   - the full cascade weight vector.
+5. Visualize:
+   - time-domain signal,
+   - power spectrum,
+   - cascade weight vector over levels 1–23.
+
+To run the notebook:
+
+cd <project-root>
+jupyter notebook notebooks/01_cascade_simulator_demo.ipynb
+
 
 ## Status
 
