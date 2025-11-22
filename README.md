@@ -1,156 +1,176 @@
 # 3I-ATLAS Cascade Lab
 
-Early-stage citizen-science lab dedicated to the interstellar comet **3I/ATLAS**.
+Early-stage **citizen-science** lab dedicated to the interstellar comet **3I/ATLAS**.
 
-This repository is not an official NASA project.  
-It is my personal workspace for:
+> This repository is **not** an official NASA project.  
+> It is my personal workspace for:
+> - tracking public updates and data products from NASA and partner teams;
+> - collecting structured observations (sky photos, notes, time/location metadata);
+> - building cascade-style models and physics/AI notebooks around 3I/ATLAS.
 
-- tracking public updates and data products from NASA and other teams;
-- collecting **structured observations** (sky photos, notes, time/location metadata);
-- building **cascade-style models** and physics/AI notebooks around 3I/ATLAS.
-
-The goal is simple: use code and careful notes as a bridge between
-public information and independent analysis, in the spirit of
-citizen scientists who have historically contributed to many NASA discoveries.
+The goal is to use code and careful notes as a bridge between open information and independent analysis, in the spirit of citizen scientists who have historically contributed to many NASA discoveries.
 
 ---
 
-## Repository layout
+## 1. Public cascade range
 
-- `docs/`
-  - `Overview_EN.md` — high-level description of the lab and its goals.
-  - `logbook_3I_ATLAS.md` — chronological log of NASA events, data releases, and key references.
-  - `cascade_notes.md` — text notes and sketches of cascade models related to 3I/ATLAS.
+The lab uses a **cascade map** inspired by musical notation and multi-level dynamics of systems.
 
-- `data/`
-  - `raw/nasa/` — official data products as downloaded (FITS, CSV, etc.), without modification.
-  - `processed/` — cleaned / resampled / combined datasets used in notebooks.
-  - `sky_notes/`
-    - `obs_log.csv` — structured table of personal observations (date, time, location, description, file id).
-    - `images/` — photos corresponding to entries in `obs_log.csv`.
+In this open repository I work only with the **public cascade range 1–23**:
 
-- `notebooks/`
-  - `01_briefing_3I_ATLAS.md` — initial briefing: what is known about 3I/ATLAS, key parameters, links.
-  - `02_cascade_patterns.md` — first ideas and visualisations for cascade-style behaviour and timelines.
+- 1–12 – human-scale cycle (day, year, basic loop of experience);  
+- 13–23 – extended range involving machine assistance, planets, the Sun and neighbouring galaxies — the first “octave” of the treble clef.
 
-- project meta:
-  - `CHANGELOG.md` — history of changes in the lab.
-  - `requirements*.txt` — Python dependencies for future analysis notebooks.
-  - `pytest.ini` — reserved for simple tests once code appears.
-  - `LICENSE` — MIT license.
-  - `.gitignore` — ignore virtualenvs, caches, and large generated files.
+Higher levels (24–36, second octave) exist as **private research material** and are intentionally **not** described here.
 
 ---
 
-## Cascade simulator (experimental)
+## 2. Repository layout
 
-The repository contains an experimental cascade simulator that maps simple
-signals into the public cascade range **1–23**.
+### `docs/`
 
-**Core modules:**
+Concepts and narrative:
 
-- `src/core/signal_loader.py` – generate synthetic test signals and compute
-  spectra (`time → freq, power`).
-- `src/core/cascade_scale.py` – define the public cascade scale (1–23) as
-  discrete levels with normalized positions in `[0, 1]`.
-- `src/core/cascade_mapping.py` – project a spectrum into the cascade space:
-  build a cascade weight vector and select a dominant cascade.
+- `Overview_EN.md` – high-level description of the lab and its goals.
+- `What_are_cascades.md` / `Что_такое_каскады.md` – intuitive explanation of cascade thinking.
+- `cascade_notes.md` – text notes and sketches of cascade models related to 3I/ATLAS (public range 1–23).
+- `cascade_scale_EN.md`, `cascade_scale_RU.md` – technical description of the public cascade scale.
+- `Cascade_Framework_Reference.md` – how different documents and modules connect.
+- `logbook_3I_ATLAS.md` – chronological log of NASA events, data releases and key references.
+- `simulator_concept.md` – design notes for the cascade simulator.
+- `logbook_3I_ATLAS.md` – running timeline of 3I/ATLAS-related activity.
 
-**Demo script:**
+Some additional files describe private extensions; where present they are marked as such directly in the document.
 
-- `scripts/run_demo_simulator.py` – generates a simple sine-based signal,
-  computes its spectrum, applies `map_dominant_cascade(...)` and prints:
+### `data/`
 
-  - the dominant cascade ID (1–23),
-  - the confidence (fraction of total power),
+Structured data used by notebooks and scripts.
+
+- `observations/`
+  - `3I_ATLAS_2025.csv` – observation log with columns  
+    `datetime_utc, source, observer, location, channel, ra_deg, dec_deg, mag_or_flux, velocity_info, cascade_level, notes`.
+  - `3I_ATLAS_observations_template.csv` – template for new campaigns.
+- `raw/nasa/` – official data products as downloaded (FITS, CSV, etc.), without modification.
+- `processed/` – cleaned / resampled / combined datasets ready for analysis.
+- `sky_notes/`
+  - `obs_log.csv` – table of personal observations (date, time, location, description, file id).
+  - `images/` – photos corresponding to `obs_log.csv` entries.
+
+### `src/`
+
+Early code for the cascade simulator:
+
+- `src/core/signal_loader.py` – build synthetic test signals and compute spectra (time → frequency, power).
+- `src/core/cascade_scale.py` – define the **public** cascade scale (1–23) as discrete levels with normalized positions in `[0, 1]`.
+- `src/core/cascade_mapping.py` – project a spectrum into cascade space: build a cascade-weight vector and select a dominant cascade.
+
+### `scripts/`
+
+Small command-line helpers:
+
+- `scripts/run_demo_simulator.py` – generate a simple sine-based signal, compute its spectrum, apply `map_dominant_cascade(...)` and print:
+  - dominant cascade ID (1–23),
+  - confidence (fraction of total power),
   - top-5 cascades by weight.
+- `scripts/annotate_observations_with_cascade.py` – enrich a CSV log with simulated cascade information.
 
-Example run from the project root:
+### `notebooks/`
+
+Interactive exploration:
+
+- `notebooks/01_cascade_simulator_demo.ipynb` – walkthrough of the simulator:
+  - generate a synthetic signal (sum of several sines + noise);
+  - compute spectrum `(freq, power)`;
+  - load public cascade scale via `get_public_scale()`;
+  - apply `map_dominant_cascade(...)` to obtain:
+    - dominant cascade ID,
+    - confidence,
+    - full cascade weight vector;
+  - visualize time-domain signal, spectrum and cascade weights.
+- `notebooks/02_observation_cascade_annotation.ipynb` (planned/experimental) – visual link between observation timelines and simulated cascades.
+
+### Project meta
+
+- `CHANGELOG.md` – history of changes in the lab.
+- `requirements.txt`, `requirements-dev.txt` – Python dependencies for scripts and notebooks.
+- `pytest.ini` – configuration for simple tests (as they appear).
+- `LICENSE` – MIT license.
+- `.gitignore` – ignore virtualenvs, caches and large generated files.
+
+---
+
+## 3. Running the simulator demo
+
+From the project root:
+
 
 python -m scripts.run_demo_simulator
 
 
-This module is experimental and works only within the public range 1–23.
-It is intended for testing mappings between signals and the cascade scale,
-not as a physical model of any specific object.
+The script will:
 
-### Observation logs and simulated cascade annotation
+Generate a synthetic test signal.
 
-For external events (e.g. 3I/ATLAS briefings) the project uses CSV logs
-under `data/observations/`:
+Compute its spectrum.
 
-- `data/observations/3I_ATLAS_observations_template.csv` – example log
-  with columns like `datetime_utc`, `source`, `channel`, `cascade_level`, `notes`.
+Map the spectrum into the public cascade range 1–23.
 
-These logs can be enriched with simulated cascade information (range 1–23)
-using:
+Print the dominant cascade and confidence plus a short ranking of top levels.
+
+This module is experimental and is intended only for testing mappings between signals and the cascade scale.
+It is not a physical model of any specific object.
+
+
+## 4. Observation logs and cascade annotation
+
+For external events (e.g. 3I/ATLAS briefings) the project uses CSV logs under data/observations/.
+
+These logs can be enriched with simulated cascade information (1–23) using:
 
 python -m scripts.annotate_observations_with_cascade
 
 
-This script:
+The annotator:
 
-reads the input CSV,
+Reads the input CSV.
 
-generates a simple synthetic signal per row (based on the channel field),
+Builds a simple synthetic signal for each row (based on the channel field).
 
-runs the cascade simulator,
+Runs the cascade simulator.
 
-writes an output CSV with two extra columns:
+Writes an output CSV with two extra columns:
 
 sim_main_cascade – dominant cascade level (1–23),
 
 sim_confidence – fraction of total spectral power assigned to this level.
 
-This is an experimental tool for linking observation timelines to the
-public cascade scale, not a physical model of any specific object.
+Again, this is an experimental tool for linking observation timelines to the public cascade scale, not a physical model.
+
+
+## 5. Status and roadmap
+
+Current status: v0.1.0 – scaffolding only
+
+no real NASA data integrated yet;
+
+cascade models are in exploratory phase;
+
+simulator works on synthetic signals only;
+
+logbook and observation formats are still evolving.
+
+Planned next steps:
+
+keep logbook_3I_ATLAS.md and observation CSVs up to date;
+
+add simple tests for cascade_scale and cascade_mapping;
+
+integrate first real public data products as they appear;
+
+expand notebooks with physics- and AI-inspired cascade models.
 
 
 
-## Jupyter notebook demo
+## 6. License
 
-For interactive exploration there is a notebook:
-
-- `notebooks/01_cascade_simulator_demo.ipynb`
-
-The notebook walks through the same pipeline as the demo script, but with plots:
-
-1. Generate a synthetic signal (sum of a few sines with noise).
-2. Compute its spectrum (`freq`, `power`).
-3. Load the public cascade scale 1–23 (`get_public_scale()`).
-4. Apply `map_dominant_cascade(...)` to obtain:
-   - the dominant cascade ID,
-   - the confidence (fraction of total power),
-   - the full cascade weight vector.
-5. Visualize:
-   - time-domain signal,
-   - power spectrum,
-   - cascade weight vector over levels 1–23.
-
-To run the notebook:
-
-cd <project-root>
-jupyter notebook notebooks/01_cascade_simulator_demo.ipynb
-
-
-## Status
-
-This lab is currently in **v0.1.0 – scaffolding only**:
-
-- no real data yet,
-- no final models,
-- only structure, logbook template and observation formats.
-
-As NASA and partner teams publish more information and data on 3I/ATLAS,
-I plan to:
-
-1. keep the logbook up to date,
-2. add structured sky observations when relevant,
-3. build several physics- and AI-inspired cascade models and publish
-   the notebooks here.
-
----
-
-## License
-
-MIT — see `LICENSE` for details.
+MIT — see LICENSE for details.
