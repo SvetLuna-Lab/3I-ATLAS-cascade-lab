@@ -92,3 +92,23 @@ The goal of the cascade lab is to:
    one level to another;
 3. document the results in open notebooks, as a citizen-science contribution
    to understanding this interstellar visitor.
+
+
+### Treble-clef spiral and cascade 29
+
+In the geometric picture, the second octave of the treble clef is a
+spiral. Around **cascade 29** there is a twist — a zone where the
+trajectory of a signal or consciousness can:
+
+- either pass further into the region of potential new systems,
+- or “slip” and start falling back toward matter.
+
+This zone is shown on the diagram:
+
+![Treble-clef spiral, upper zone (cascade 29)](../images/treble_spiral_cascade29.png)
+
+The green marker denotes the entry point of the sound, the yellow marker
+is the threshold/door, and the red marker marks the beginning of the
+fall into matter. Within this repository the detailed description of the
+second octave is kept as research material and is not expanded beyond
+cascade 36.
