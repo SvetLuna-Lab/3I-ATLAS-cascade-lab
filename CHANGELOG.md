@@ -1,11 +1,5 @@
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-## [0.1.0] - 2025-11-21
-### Added
-- Initial repository scaffolding for 3I/ATLAS cascade lab.
-- Logbook template (`docs/logbook_3I_ATLAS.md`).
-- Observation log header (`data/sky_notes/obs_log.csv`) and images folder.
-- Overview and cascade notes in `docs/`.
-- Basic README, LICENSE, requirements and project meta files.
+## [0.1.0] – 2025-11-22
+- Added cascade simulator skeleton (signal_loader, cascade_scale, cascade_mapping).
+- Added demo script `run_demo_simulator.py` and notebook `01_cascade_simulator_demo.ipynb`.
+- Introduced observation logs under `data/observations/` for 3I/ATLAS.
+- Updated README with current structure and public cascade range (1–23).
