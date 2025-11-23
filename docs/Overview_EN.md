@@ -93,3 +93,21 @@ on one side, and a cascade-based interpretive framework on the other.
   
 
 ![Analog view of the cascade lab: old keyboard + annotated score](../images/cascade_lab_analog_synth.jpg)
+
+
+This image captures the spirit of the project:
+
+- an **old keyboard** with a hand–annotated score above it,
+- marks, levels and small “signals” drawn directly on the staff.
+
+For the lab, this is a visual metaphor of a **cascade map**:
+
+- the keys represent discrete levels (cascades);
+- the hand–drawn annotations represent early human intuition:
+  how sound, events and levels might be linked;
+- candles and wood suggest a slow, careful, almost “analog” way of thinking
+  before any code is written.
+
+The digital tools in this repository — simulators, notebooks and logs — are the
+next step: they translate this intuitive “analog” sketch into reproducible
+experiments with signals, spectra and cascade IDs.
