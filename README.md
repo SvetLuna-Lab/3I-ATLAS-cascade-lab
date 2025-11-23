@@ -165,6 +165,28 @@ public information about 3I/ATLAS and independent, carefully documented explorat
 
 
 
+### Second octave and a “missing” note between F♯ and G
+
+In the extended (private) cascade map — which corresponds to the **second octave**
+of the treble clef — I treat the scale as slightly richer than the standard
+Western twelve–tone system.
+
+Conceptually, there is a **hypothetical additional note** between **F♯** and **G**
+in this second octave:
+
+- it behaves like a separate cascade level,  
+- it appears as a “pocket” or “chest” zone in the spiral of the treble clef,  
+- it is linked to states that are felt in experience but are not yet encoded
+  in any conventional musical or physical notation.
+
+This extra note is **not** implemented in the public simulator
+(the public cascade range in this repository stays within levels 1–23).
+Here it is recorded explicitly as a **research hypothesis** about the structure
+of the second-octave cascades, not as a claim about standard music theory.
+
+
+
+
 ## 4. Observation logs and cascade annotation
 
 For external events (e.g. 3I/ATLAS briefings) the project uses CSV logs under data/observations/.
