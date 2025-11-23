@@ -87,7 +87,13 @@ Interactive exploration:
     - confidence,
     - full cascade weight vector;
   - visualize time-domain signal, spectrum and cascade weights.
-- `notebooks/02_observation_cascade_annotation.ipynb` (planned/experimental) – visual link between observation timelines and simulated cascades.
+- `notebooks/02_observation_cascade_annotation.ipynb`  – visual link between observation timelines and simulated cascades.
+ `notebooks/02_observation_cascade_annotation.ipynb` – работа с журналом наблюдений:
+ - читает `data/observations/3I_ATLAS_observations_template.csv`;
+ - при необходимости запускает аннотацию через
+    `scripts.annotate_observations_with_cascade`;
+ - анализирует распределение `sim_main_cascade` и `sim_confidence`;
+ - строит временную линию `sim_main_cascade` по `datetime_utc`.
 
 ### Project meta
 
