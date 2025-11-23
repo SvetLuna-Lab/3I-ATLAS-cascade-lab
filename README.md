@@ -153,9 +153,15 @@ It is not a physical model of any specific object.
 
 ![Cascade Lab: digital synth + code timelines](images/cascade_lab_digital_synth.jpg)
 
-3I-ATLAS Cascade Lab is a small citizen-science workspace where
-musical keys (cascade levels) are mapped to timelines, signals, and
-independent analysis of interstellar objects like 3I/ATLAS.
+
+The synthesizer above is a metaphor for the lab itself:
+
+- the **keyboard** stands for the discrete cascade levels (1–23 in the public range);
+- the **control panel and screen** stand for notebooks, scripts and models
+  that convert raw signals into structured “music” of the system.
+
+The goal is to use **AI + signal analysis + cascade scales** as a bridge between  
+public information about 3I/ATLAS and independent, carefully documented exploration.
 
 
 
