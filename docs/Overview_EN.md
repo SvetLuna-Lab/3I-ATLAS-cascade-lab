@@ -91,3 +91,5 @@ The lab lives in this intersection: between rigorous logging and simulation
 on one side, and a cascade-based interpretive framework on the other.
 
   
+
+![Analog view of the cascade lab: old keyboard + annotated score](../images/cascade_lab_analog_synth.jpg)
