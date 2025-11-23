@@ -98,7 +98,7 @@ Interactive exploration:
 - `notebooks/01_cascade_simulator_demo.ipynb`(RU) – базовая демонстрация симулятора:
  - генерация синтетического сигнала, спектр, мэппинг в каскады 1–23, визуализация.
 
-` `notebooks/02_observation_cascade_annotation.ipynb`(RU) – работа с журналом наблюдений:
+- `notebooks/02_observation_cascade_annotation.ipynb` – работа с журналом наблюдений:
  - читает `data/observations/3I_ATLAS_observations_template.csv`;
  - при необходимости запускает аннотацию через
  - `scripts.annotate_observations_with_cascade`;
