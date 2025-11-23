@@ -105,6 +105,20 @@ Interactive exploration:
  - анализирует распределение `sim_main_cascade` и `sim_confidence`;
  - строит временную линию `sim_main_cascade` по `datetime_utc`.
 
+
+### Official 3I/ATLAS imagery (no local copies)
+
+This repository does **not** store NASA or ESA images of 3I/ATLAS locally.
+
+For official visuals and mission pages, see:
+
+- `docs/nasa_image_manifest.md` – link-only catalog of NASA / ESA 3I/ATLAS image
+  galleries and mission-specific articles (SOHO, MAVEN, Perseverance, ExoMars, Mars Express, etc.).
+
+In this lab we work only with **links and derived numerical/analytical data** (where available),
+not with redistributed image files.
+
+
 ### Project meta
 
 - `CHANGELOG.md` – history of changes in the lab.
