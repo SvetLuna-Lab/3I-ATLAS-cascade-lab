@@ -151,6 +151,14 @@ This module is experimental and is intended only for testing mappings between si
 It is not a physical model of any specific object.
 
 
+![Cascade Lab: digital synth + code timelines](images/cascade_lab_digital_synth.jpg)
+
+3I-ATLAS Cascade Lab is a small citizen-science workspace where
+musical keys (cascade levels) are mapped to timelines, signals, and
+independent analysis of interstellar objects like 3I/ATLAS.
+
+
+
 ## 4. Observation logs and cascade annotation
 
 For external events (e.g. 3I/ATLAS briefings) the project uses CSV logs under data/observations/.
